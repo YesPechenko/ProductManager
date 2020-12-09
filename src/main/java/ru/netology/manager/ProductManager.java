@@ -10,7 +10,7 @@ public class ProductManager {
 
     public ProductManager(ProductRepository repository) {
         this.repository = repository;
-    }
+            }
 
     public void add(Product item) {
         repository.save(item);
@@ -50,4 +50,6 @@ public class ProductManager {
         }
         return false;
     }
+
+
 }

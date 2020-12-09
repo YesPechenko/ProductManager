@@ -5,14 +5,8 @@ import ru.netology.domain.Book;
 import ru.netology.domain.Smartphone;
 
 public class ProductRepository {
-    private Product[] items  = {
-        new Book(1, "Name1", 10, "Author1"),
-            new Book(2, "Name2", 20, "Author2"),
-            new Book(3, "Name3", 30, "Author3"),
-            new Smartphone(4, "NameS1", 100, "Generator1"),
-            new Smartphone(5, "NameS2", 200, "Generator2"),
-            new Smartphone(6, "NameS3", 300, "Generator3")
-    };
+    private Product[] items  = new Product[0];
+
 
 
     public void save(Product item) {
@@ -57,4 +51,6 @@ public class ProductRepository {
     public void setItems(Product[] items) {
         this.items = items;
     }
+
+
 }
